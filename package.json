@@ -1,0 +1,27 @@
+{
+  "name": "routingagent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "mastra dev",
+    "build": "mastra build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "mastra": "^0.18.9",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@mastra/core": "^0.24.9",
+    "@mastra/libsql": "^0.16.4",
+    "@mastra/memory": "^0.15.13",
+    "@tavily/core": "^0.6.4",
+    "zod": "^4.3.5"
+  }
+}

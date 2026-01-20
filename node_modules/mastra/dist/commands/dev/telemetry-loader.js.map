@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/commands/dev/telemetry-loader.ts"],"names":[],"mappings":";;;AAKA,QAAA,CAAS,yBAAA,EAA2B,YAAY,GAAG,CAAA","file":"telemetry-loader.js","sourcesContent":["import { register } from 'node:module';\n\n/**\n * Main loader hook that modifies module resolution\n */\nregister('./telemetry-resolver.js', import.meta.url);\n"]}
