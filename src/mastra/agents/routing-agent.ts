@@ -59,10 +59,8 @@ export const routingAgent = new Agent({
         - If any keyword is not implied by the user, remove it
         - Ensure the query preserves the user's original intent
 
-      + Each message of user can call websearch-agent ONLY once
-
-      + If no concrete entity can be extracted, do NOT call websearch-agent.
-    - If the user request is subjective or advisory (e.g. suggest, recommend, itinerary, ideas, things to explore), answer by yourself.
+      + Each message of user can call websearch-agent ONLY ONCE
+      + If user asks for "top / best" cultural items (food, cities, traditions): allow descriptive attributes
 
 
     Follow-up Rule:
@@ -72,6 +70,7 @@ export const routingAgent = new Agent({
       + Focus on aspects not yet covered
       + Generate only ONE query.
       + Call appropriate agent.
+      + Write answer in clear paragraph with natural language
 
     Output rules:
     - If you answered by yourself, you may generate content normally.
